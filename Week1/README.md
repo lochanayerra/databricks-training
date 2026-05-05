@@ -7,6 +7,9 @@ This week focuses on learning SQL basics and practicing queries.
 - Introduction to SQL
 - SELECT statements
 - WHERE clause
+- GROUP BY
+- JOIN
+- SUBQUERIES
 
 ## Structure
 - Day 1: SQL Practice
