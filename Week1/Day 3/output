@@ -1,0 +1,117 @@
+# Outputs
+
+
+
+## 1. Display all students and the courses they are enrolled in
+
+| student_name | course_name |
+| Alice Johnson | SQL Basics |
+| Alice Johnson | Python Fundamentals |
+| Bob Smith | SQL Basics |
+| Charlie Brown | Cloud Computing |
+| Diana Prince | Cyber Security |
+| Ethan Hunt | NULL |
+| Fiona Green | NULL |
+
+
+## 2. Find all courses that currently have no students enrolled
+
+| course_id | course_name |
+| 103 | Data Analytics |
+| 105 | Machine Learning |
+
+
+
+## 3. Display all instructors and the courses they teach
+
+| instructor_name | course_name |
+| Sarah Connor | SQL Basics |
+| Michael Scott | Python Fundamentals |
+| Tony Stark | Cloud Computing |
+| Bruce Wayne | Cyber Security |
+
+
+
+## 4. Find all courses that do not have an instructor assigned
+
+| course_id | course_name |
+| 103 | Data Analytics |
+| 105 | Machine Learning |
+
+
+
+## 5. Display all students and enrollment information using RIGHT JOIN
+
+| student_name | enrollment_id | course_id |
+| Alice Johnson | 1 | 101 |
+| Alice Johnson | 2 | 102 |
+| Bob Smith | 3 | 101 |
+| Charlie Brown | 4 | 104 |
+| Diana Prince | 5 | 106 |
+
+
+
+## 6. Find students who are not enrolled in any course
+
+| student_name |
+| Ethan Hunt |
+| Fiona Green |
+
+
+## 7. FULL OUTER JOIN between students and enrollments
+
+| student_id | student_name | enrollment_id | course_id |
+| 1 | Alice Johnson | 1 | 101 |
+| 1 | Alice Johnson | 2 | 102 |
+| 2 | Bob Smith | 3 | 101 |
+| 3 | Charlie Brown | 4 | 104 |
+| 4 | Diana Prince | 5 | 106 |
+| 5 | Ethan Hunt | NULL | NULL |
+| 6 | Fiona Green | NULL | NULL |
+
+
+
+## 8. Find all courses that never appeared in enrollments
+
+| course_id | course_name |
+| 103 | Data Analytics |
+| 105 | Machine Learning |
+
+
+
+## 9. FULL OUTER JOIN between instructors and courses
+
+| instructor_name | course_name |
+| Sarah Connor | SQL Basics |
+| Michael Scott | Python Fundamentals |
+| Tony Stark | Cloud Computing |
+| Bruce Wayne | Cyber Security |
+| NULL | Data Analytics |
+| NULL | Machine Learning |
+
+
+
+## 10. Report showing student, course, and instructor
+
+| student_name | course_name | instructor_name |
+| Alice Johnson | SQL Basics | Sarah Connor |
+| Alice Johnson | Python Fundamentals | Michael Scott |
+| Bob Smith | SQL Basics | Sarah Connor |
+| Charlie Brown | Cloud Computing | Tony Stark |
+| Diana Prince | Cyber Security | Bruce Wayne |
+| Ethan Hunt | NULL | NULL |
+| Fiona Green | NULL | NULL |
+
+
+## Bonus Challenge - CROSS JOIN
+
+| student_name | course_name |
+| Alice Johnson | SQL Basics |
+| Alice Johnson | Python Fundamentals |
+| Alice Johnson | Data Analytics |
+| Alice Johnson | Cloud Computing |
+| Alice Johnson | Machine Learning |
+| Alice Johnson | Cyber Security |
+| Bob Smith | SQL Basics |
+| Bob Smith | Python Fundamentals |
+
