@@ -1,1 +1,98 @@
+Q1 OUTPUT
+abc123xyz -> NULL
+test45done -> NULL
+run9fast -> NULL
 
+Q2 OUTPUT
+abc123xyz -> NULL
+test45done -> NULL
+karthik99 -> 99
+
+Q3 OUTPUT
+abc123xyz -> a
+test45done -> t
+run9fast -> r
+
+Q4 OUTPUT
+abc123xyz -> z
+test45done -> e
+run9fast -> t
+
+Q5 OUTPUT
+abc123xyz -> 12
+test45done -> 45
+go88home -> 88
+
+Q6 OUTPUT
+abc123xyz -> 1
+test45done -> 4
+run9fast -> 9
+
+Q7 OUTPUT
++91-9876543210 -> 91
++1-7654321098 -> 1
++44-9988776655 -> 44
+
+Q8 OUTPUT
+abc123xyz -> 123
+spark12sql -> 12
+etl999job -> 999
+
+Q9 OUTPUT
+karthik@gmail.com -> karthik
+rahul@yahoo.com -> rahul
+john@outlook.com -> john
+
+Q10 OUTPUT
+karthik@gmail.com -> gmail.com
+rahul@yahoo.com -> yahoo.com
+john@outlook.com -> outlook.com
+
+Q11 OUTPUT
+karthik@gmail.com -> gmail.com
+arjun@company.in -> company.in
+
+Q12 OUTPUT
+karthik@gmail.com -> com
+arjun@company.in -> in
+alice@company.au -> au
+
+Q13 OUTPUT
+abc123xyz -> abc
+spark12sql -> spark
+etl999job -> etl
+
+Q14 OUTPUT
+abc123xyz -> 123
+spark12sql -> 12
+etl999job -> 999
+
+Q15 OUTPUT
+EMP001_IN_91 -> EMP
+USR11_IN -> USR
+ACC_1001_91 -> ACC
+
+Q16 OUTPUT
+EMP001_IN_91 -> 91
+EMP002_US_01 -> 01
+EMP003_UK_44 -> 44
+
+Q17 OUTPUT
+EMP001_IN_91 -> 001
+EMP002_US_01 -> 002
+ACC_1001_91 -> 1001
+
+Q18 OUTPUT
+EMP001_IN_91 -> 91
+EMP002_US_01 -> 01
+EMP003_UK_44 -> 44
+
+Q19 OUTPUT
+EMP001_IN_91 -> IN
+EMP002_US_01 -> US
+EMP003_UK_44 -> UK
+
+Q20 OUTPUT
++91-9876543210 -> 91
++1-7654321098 -> 1
++44-9988776655 -> 44
