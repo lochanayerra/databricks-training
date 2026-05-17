@@ -1,1 +1,165 @@
+QUESTION 1 OUTPUT
+ABS(-100)
 
+100
+
+
+
+QUESTION 2 OUTPUT
+
+
+emp_name   rounded_salary
+
+Karthik    75001
+Veena      65000
+Ravi       85001
+Anil       70000
+Suresh     60001
+
+
+
+QUESTION 3 OUTPUT
+
+emp_name   rounded_salary
+
+Karthik    75000.75
+Veena      65000.40
+Ravi       85000.90
+Anil       70000.10
+Suresh     60000.55
+
+
+
+QUESTION 4 OUTPUT
+
+
+emp_name   ceil_salary
+
+Karthik    75001
+Veena      65001
+Ravi       85001
+Anil       70001
+Suresh     60001
+
+
+
+QUESTION 5 OUTPUT
+
+
+emp_name   floor_salary
+
+Karthik    75000
+Veena      65000
+Ravi       85000
+Anil       70000
+Suresh     60000
+
+
+
+QUESTION 6 OUTPUT
+
+
+emp_name   truncated_salary
+
+Karthik    75000.7
+Veena      65000.4
+Ravi       85000.9
+Anil       70000.1
+Suresh     60000.5
+
+
+
+QUESTION 7 OUTPUT
+
+
+emp_name   mod_value
+
+Karthik    0
+Veena      0
+Ravi       0
+Anil       1
+Suresh     1
+
+
+
+QUESTION 8 OUTPUT
+POWER(2,3)
+
+8
+
+
+
+QUESTION 9 OUTPUT
+POW(5,2)
+
+25
+
+
+
+QUESTION 10 OUTPUT
+SQRT(64)
+
+8
+
+
+
+QUESTION 11 OUTPUT
+
+
+emp_name   sign_value
+
+Karthik    1
+Veena      1
+Ravi       1
+Anil       1
+Suresh     1
+
+
+
+QUESTION 12 OUTPUT
+
+
+RAND()
+
+0.5487321
+
+(Note: Random value changes every execution)
+
+
+
+QUESTION 13 OUTPUT
+
+
+emp_name   formatted_salary
+
+Karthik    75,000.75
+Veena      65,000.40
+Ravi       85,000.90
+Anil       70,000.10
+Suresh     60,000.55
+
+
+
+QUESTION 14 OUTPUT
+
+
+emp_name   greatest_value
+
+Karthik    75000.75
+Veena      65000.40
+Ravi       85000.90
+Anil       70000.10
+Suresh     60000.55
+
+
+
+QUESTION 15 OUTPUT
+
+
+emp_name   least_value
+
+Karthik    5000.50
+Veena      4000.25
+Ravi       6000.75
+Anil       0
+Suresh     3000.30
