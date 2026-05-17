@@ -1,1 +1,360 @@
+QUESTION 1 OUTPUT
 
+employee_name | manager_name
+--------------------------------
+Karthik      | NULL
+Ajay         | Karthik
+Vijay        | Karthik
+Vinay        | Ajay
+Meena        | Vijay
+Veer         | NULL
+Keerthi      | Vinay
+Priya        | Vinay
+
+
+QUESTION 2 OUTPUT
+
+emp_name | dept_name
+----------------------
+Karthik | HR
+Ajay    | HR
+Vijay   | IT
+Vinay   | IT
+Meena   | Finance
+Veer    | Marketing
+Keerthi | Sales
+Priya   | Sales
+
+
+QUESTION 3 OUTPUT
+
+employee_name | manager_name
+--------------------------------
+Ajay         | Karthik
+Vijay        | Karthik
+Vinay        | Ajay
+Meena        | Vijay
+Keerthi      | Vinay
+Priya        | Vinay
+
+
+QUESTION 4 OUTPUT
+
+dept_name | total_employees
+-----------------------------
+Finance   | 1
+HR        | 2
+IT        | 2
+Marketing | 1
+Sales     | 2
+
+
+QUESTION 5 OUTPUT
+
+No employees without department
+
+
+QUESTION 6 OUTPUT
+
+emp_name | project_name
+-------------------------
+Karthik | Project A
+Ajay    | Project B
+Vijay   | Project C
+Vinay   | Project D
+Meena   | Project E
+Veer    | NULL
+Keerthi | NULL
+Priya   | NULL
+
+
+QUESTION 7 OUTPUT
+
+emp_name | project_name
+-------------------------
+Karthik | Project A
+Ajay    | Project B
+Vijay   | Project C
+Vinay   | Project D
+Meena   | Project E
+
+
+QUESTION 8 OUTPUT
+
+project_name | emp_name
+--------------------------
+Project A    | Karthik
+Project B    | Ajay
+Project C    | Vijay
+Project D    | Vinay
+Project E    | Meena
+
+
+QUESTION 9 OUTPUT
+
+emp_name | salary
+-------------------
+Karthik | NULL
+Ajay    | NULL
+Vijay   | NULL
+Vinay   | NULL
+Meena   | NULL
+Veer    | NULL
+Keerthi | NULL
+Priya   | NULL
+
+
+QUESTION 10 OUTPUT
+
+emp_name | dept_name
+----------------------
+Karthik | HR
+Ajay    | HR
+Vijay   | IT
+Vinay   | IT
+Meena   | Finance
+Veer    | Marketing
+Keerthi | Sales
+Priya   | Sales
+
+
+QUESTION 11 OUTPUT
+
+dept_name | emp_name
+----------------------
+HR        | Karthik
+HR        | Ajay
+IT        | Vijay
+IT        | Vinay
+Finance   | Meena
+Marketing | Veer
+Sales     | Keerthi
+Sales     | Priya
+
+
+QUESTION 12 OUTPUT
+
+emp_name | contact_info
+-------------------------
+Karthik | NULL
+Ajay    | NULL
+Vijay   | NULL
+Vinay   | NULL
+Meena   | NULL
+Veer    | NULL
+Keerthi | NULL
+Priya   | NULL
+
+
+QUESTION 13 OUTPUT
+
+emp_name | dept_name
+----------------------
+Karthik | HR
+Ajay    | HR
+Vijay   | IT
+Vinay   | IT
+Meena   | Finance
+Veer    | Marketing
+Keerthi | Sales
+Priya   | Sales
+
+
+QUESTION 14 OUTPUT
+
+emp_name
+----------
+Veer
+Keerthi
+Priya
+
+
+QUESTION 15 OUTPUT
+
+emp_name | project_name
+-------------------------
+Karthik | Project A
+Ajay    | Project B
+Vijay   | Project C
+Vinay   | Project D
+Meena   | Project E
+Veer    | NULL
+Keerthi | NULL
+Priya   | NULL
+
+
+QUESTION 16 OUTPUT
+
+project_name | emp_name
+--------------------------
+Project A    | Karthik
+Project B    | Ajay
+Project C    | Vijay
+Project D    | Vinay
+Project E    | Meena
+
+
+QUESTION 17 OUTPUT
+
+emp_name | manager_name | project_name
+----------------------------------------
+Ajay     | Karthik      | Project B
+Vijay    | Karthik      | Project C
+Vinay    | Ajay         | Project D
+Meena    | Vijay        | Project E
+
+
+QUESTION 18 OUTPUT
+
+emp_name | dept_name
+----------------------
+Karthik | HR
+Ajay    | HR
+Vijay   | IT
+Vinay   | IT
+Meena   | Finance
+Veer    | Marketing
+Keerthi | Sales
+Priya   | Sales
+
+
+QUESTION 19 OUTPUT
+
+No employees belong to multiple departments
+
+
+QUESTION 20 OUTPUT
+
+dept_name | emp_name
+----------------------
+HR        | Karthik
+HR        | Ajay
+IT        | Vijay
+IT        | Vinay
+Finance   | Meena
+Marketing | Veer
+Sales     | Keerthi
+Sales     | Priya
+
+
+QUESTION 21 OUTPUT
+
+No employees found
+
+
+QUESTION 22 OUTPUT
+
+dept_name | total_employees
+-----------------------------
+Finance   | 1
+HR        | 2
+IT        | 2
+Marketing | 1
+Sales     | 2
+
+
+QUESTION 23 OUTPUT
+
+emp_name | manager_name
+-------------------------
+Ajay    | Karthik
+Vijay   | Karthik
+Vinay   | Ajay
+Meena   | Vijay
+Keerthi | Vinay
+Priya   | Vinay
+
+
+QUESTION 24 OUTPUT
+
+emp_name | manager_name
+-------------------------
+Karthik | NULL
+Ajay    | Karthik
+Vijay   | Karthik
+Vinay   | Ajay
+Meena   | Vijay
+Veer    | NULL
+Keerthi | Vinay
+Priya   | Vinay
+
+
+QUESTION 25 OUTPUT
+
+dept_name | employee_count
+----------------------------
+Finance   | 1
+HR        | 2
+IT        | 2
+Marketing | 1
+Sales     | 2
+
+
+QUESTION 26 OUTPUT
+
+emp_name | dept_name
+----------------------
+Karthik | HR
+Ajay    | HR
+Vijay   | IT
+Vinay   | IT
+Meena   | Finance
+Veer    | Marketing
+Keerthi | Sales
+Priya   | Sales
+
+
+QUESTION 27 OUTPUT
+
+emp_name
+----------
+Karthik
+Ajay
+Vijay
+Vinay
+Meena
+Veer
+Keerthi
+Priya
+
+
+QUESTION 28 OUTPUT
+
+emp_name | project_name
+-------------------------
+Karthik | Project A
+Ajay    | Project B
+Vijay   | Project C
+Vinay   | Project D
+Meena   | Project E
+Veer    | NULL
+Keerthi | NULL
+Priya   | NULL
+
+
+QUESTION 29 OUTPUT
+
+emp_name | dept_name | project_name
+--------------------------------------
+Karthik | HR        | Project A
+Ajay    | HR        | Project B
+Vijay   | IT        | Project C
+Vinay   | IT        | Project D
+Meena   | Finance   | Project E
+Veer    | Marketing | NULL
+Keerthi | Sales     | NULL
+Priya   | Sales     | NULL
+
+
+QUESTION 30 OUTPUT
+
+emp_name | dept_name
+----------------------
+Karthik | HR
+Ajay    | HR
+Vijay   | IT
+Vinay   | IT
+Meena   | Finance
+Veer    | Marketing
+Keerthi | Sales
+Priya   | Sales
