@@ -1,5 +1,3 @@
--- SQL Window Functions and CTE Assignment Solutions
-
 -- 1. Use ROW_NUMBER() to assign a row number to employees ordered by salary descending.
 SELECT employee_name, salary,
 ROW_NUMBER() OVER(ORDER BY salary DESC) AS row_num
@@ -63,13 +61,14 @@ LEAD(total_amount) OVER(
 ) AS next_order
 FROM orders;
 
--- 11. Find the difference between the current order amount and previous order amount.
+-- 11. Find the difference between current and previous order amount.
 SELECT customer_id, order_id, total_amount,
-total_amount -
-LAG(total_amount) OVER(
-    PARTITION BY customer_id
-    ORDER BY order_date
-) AS difference
+total_amount - (
+    LAG(total_amount) OVER(
+        PARTITION BY customer_id
+        ORDER BY order_date
+    )
+) AS difference_amount
 FROM orders;
 
 -- 12. Calculate a moving average of the last 3 orders.
@@ -128,7 +127,7 @@ SELECT employee_name, department, salary,
 SUM(salary) OVER(PARTITION BY department) AS department_payroll
 FROM employees;
 
--- 19. Find the percentage contribution of each employee salary within their department.
+-- 19. Find the percentage contribution of each employee salary within department.
 SELECT employee_name, department, salary,
 ROUND(
     salary * 100.0 /
@@ -151,7 +150,7 @@ WITH employee_sales AS (
 )
 SELECT * FROM employee_sales;
 
--- 22. Use a CTE to find employees whose sales exceed the company average.
+-- 22. Use a CTE to find employees whose sales exceed company average.
 WITH employee_sales AS (
     SELECT employee_id,
     SUM(total_amount) AS total_sales
@@ -209,7 +208,7 @@ WITH RECURSIVE employee_hierarchy AS (
 )
 SELECT * FROM employee_hierarchy;
 
--- 26. Create a CTE that filters orders above the average order amount.
+-- 26. Create a CTE that filters orders above average order amount.
 WITH avg_order AS (
     SELECT AVG(total_amount) AS avg_amount
     FROM orders
@@ -241,12 +240,12 @@ FROM (
 ) t
 WHERE rn = 2;
 
--- 29. Display the difference between each employee salary and the department maximum salary.
+-- 29. Display difference between employee salary and department maximum salary.
 SELECT employee_name, department, salary,
 MAX(salary) OVER(PARTITION BY department) - salary AS difference
 FROM employees;
 
--- 30. Combine CTEs and window functions to find the top-performing employee in each department based on total sales.
+-- 30. Combine CTEs and window functions to find top-performing employee in each department.
 WITH employee_sales AS (
     SELECT e.employee_id,
            e.employee_name,
