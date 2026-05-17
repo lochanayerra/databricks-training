@@ -1,1 +1,337 @@
+1. Show all employees whose salary is NULL
+------------------------------------------
 
+emp_id | name  | salary | bonus | manager_id
+------------------------------------------------
+2      | John  | NULL   | 5000  | 102
+4      | David | NULL   | NULL  | 103
+6      | Kiran | NULL   | NULL  | NULL
+8      | Neha  | NULL   | 2000  | NULL
+
+
+
+2. Show all orders where discount is NOT NULL
+---------------------------------------------
+
+order_id | customer_name | amount | discount | coupon_code
+-----------------------------------------------------------
+102      | John          | NULL   | 50       | NULL
+105      | Priya         | 1500   | 100      | NULL
+108      | Neha          | NULL   | 200      | DISC15
+
+
+
+3. Get products where category is NULL
+--------------------------------------
+
+product_id | product_name | price | category | stock
+-----------------------------------------------------
+3          | Tablet       | 30000 | NULL     | 5
+4          | Headphones   | NULL  | NULL     | NULL
+7          | Mouse        | 500   | NULL     | NULL
+
+
+
+4. Count number of employees with NULL manager_id
+-------------------------------------------------
+
+null_manager_count
+------------------
+3
+
+
+
+5. Replace NULL salary with 0
+-----------------------------
+
+name   | salary
+----------------
+Amit   | 50000
+John   | 0
+Sara   | 60000
+David  | 0
+Priya  | 45000
+Kiran  | 0
+Ravi   | 70000
+Neha   | 0
+
+
+
+6. Replace NULL bonus with 1000
+-------------------------------
+
+name   | bonus
+---------------
+Amit   | 1000
+John   | 5000
+Sara   | 1000
+David  | 1000
+Priya  | 3000
+Kiran  | 1000
+Ravi   | 7000
+Neha   | 2000
+
+
+
+7. Show order amount, if NULL replace with 500
+-----------------------------------------------
+
+customer_name | amount
+-----------------------
+Amit          | 1000
+John          | 500
+Sara          | 2000
+David         | 500
+Priya         | 1500
+Kiran         | 500
+Ravi          | 3000
+Neha          | 500
+
+
+
+8. Replace NULL stock with 0
+----------------------------
+
+product_name | stock
+---------------------
+Laptop       | 10
+Phone        | 0
+Tablet       | 5
+Headphones   | 0
+Monitor      | 0
+Keyboard     | 15
+Mouse        | 0
+Printer      | 3
+
+
+
+9. Show employee earnings using salary, if NULL use bonus
+---------------------------------------------------------
+
+name   | earnings
+------------------
+Amit   | 50000
+John   | 5000
+Sara   | 60000
+David  | NULL
+Priya  | 45000
+Kiran  | NULL
+Ravi   | 70000
+Neha   | 2000
+
+
+
+10. Show first available value salary → bonus → 0
+-------------------------------------------------
+
+name   | final_income
+----------------------
+Amit   | 50000
+John   | 5000
+Sara   | 60000
+David  | 0
+Priya  | 45000
+Kiran  | 0
+Ravi   | 70000
+Neha   | 2000
+
+
+
+11. Show product price price → 1000 (default)
+----------------------------------------------
+
+product_name | final_price
+---------------------------
+Laptop       | 50000
+Phone        | 1000
+Tablet       | 30000
+Headphones   | 1000
+Monitor      | 20000
+Keyboard     | 1000
+Mouse        | 500
+Printer      | 1000
+
+
+
+12. Get customer payment amount → discount → 0
+-----------------------------------------------
+
+customer_name | payment
+------------------------
+Amit          | 1000
+John          | 50
+Sara          | 2000
+David         | 0
+Priya         | 1500
+Kiran         | 0
+Ravi          | 3000
+Neha          | 200
+
+
+
+13. Convert salary to NULL if salary = 0
+----------------------------------------
+
+name   | salary_check
+----------------------
+Amit   | 50000
+John   | NULL
+Sara   | 60000
+David  | NULL
+Priya  | 45000
+Kiran  | NULL
+Ravi   | 70000
+Neha   | NULL
+
+
+
+14. Convert discount to NULL if discount = 0
+--------------------------------------------
+
+customer_name | discount_check
+--------------------------------
+Amit          | NULL
+John          | 50
+Sara          | NULL
+David         | NULL
+Priya         | 100
+Kiran         | NULL
+Ravi          | NULL
+Neha          | 200
+
+
+
+15. Use NULLIF to avoid divide by zero
+--------------------------------------
+
+customer_name | division_result
+--------------------------------
+Amit          | NULL
+John          | NULL
+Sara          | NULL
+David         | NULL
+Priya         | 15
+Kiran         | NULL
+Ravi          | NULL
+Neha          | NULL
+
+
+
+16. Replace coupon_code with NULL if it is 'DISC10'
+---------------------------------------------------
+
+customer_name | coupon_status
+--------------------------------
+Amit          | NULL
+John          | NULL
+Sara          | DISC20
+David         | NULL
+Priya         | NULL
+Kiran         | DISC5
+Ravi          | NULL
+Neha          | DISC15
+
+
+
+17. Calculate total earnings salary + bonus
+-------------------------------------------
+
+name   | total_earnings
+------------------------
+Amit   | 50000
+John   | 5000
+Sara   | 60000
+David  | 0
+Priya  | 48000
+Kiran  | 0
+Ravi   | 77000
+Neha   | 2000
+
+
+
+18. Show employees where both salary AND bonus are NULL
+-------------------------------------------------------
+
+emp_id | name  | salary | bonus | manager_id
+------------------------------------------------
+4      | David | NULL   | NULL  | 103
+6      | Kiran | NULL   | NULL  | NULL
+
+
+
+19. Show products where price is NULL but category is NOT NULL
+--------------------------------------------------------------
+
+product_id | product_name | price | category     | stock
+---------------------------------------------------------
+2          | Phone        | NULL  | Electronics  | NULL
+6          | Keyboard     | NULL  | Accessories  | 15
+8          | Printer      | NULL  | Electronics  | 3
+
+
+
+20. Show orders where both amount and discount are NULL
+-------------------------------------------------------
+
+order_id | customer_name | amount | discount | coupon_code
+-----------------------------------------------------------
+104      | David         | NULL   | NULL     | NULL
+106      | Kiran         | NULL   | NULL     | DISC5
+
+
+
+21. Show employee income using COALESCE(salary, bonus, 1000)
+------------------------------------------------------------
+
+name   | income
+----------------
+Amit   | 50000
+John   | 5000
+Sara   | 60000
+David  | 1000
+Priya  | 45000
+Kiran  | 1000
+Ravi   | 70000
+Neha   | 2000
+
+
+
+22. Replace empty discount with NULL using NULLIF
+-------------------------------------------------
+
+customer_name | discount_value
+--------------------------------
+Amit          | NULL
+John          | 50
+Sara          | NULL
+David         | NULL
+Priya         | 100
+Kiran         | NULL
+Ravi          | NULL
+Neha          | 200
+
+
+
+23. Show final payable amount amount - discount
+------------------------------------------------
+
+customer_name | final_payable
+--------------------------------
+Amit          | 1000
+John          | -50
+Sara          | 2000
+David         | 0
+Priya         | 1400
+Kiran         | 0
+Ravi          | 3000
+Neha          | -200
+
+
+
+24. Find employees where salary is NULL but manager exists
+----------------------------------------------------------
+
+emp_id | name  | salary | bonus | manager_id
+------------------------------------------------
+2      | John  | NULL   | 5000  | 102
+4      | David | NULL   | NULL  | 103
